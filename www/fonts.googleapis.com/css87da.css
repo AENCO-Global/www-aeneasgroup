@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Antic Slab';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Antic Slab Regular'), local('AnticSlab-Regular'), url(../fonts.gstatic.com/s/anticslab/v6/bWt97fPFfRzkCa9Jlp6IacVcWQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('PT Sans'), local('PTSans-Regular'), url(../fonts.gstatic.com/s/ptsans/v9/jizaRExUiTo99u79D0KEwA.ttf) format('truetype');
+}
