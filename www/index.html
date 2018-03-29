@@ -608,7 +608,11 @@ Use of hyperlinks to other Internet sites or resources are at the Visitor&#8217;
 				return;
 			}			
 			jQuery('.loading').show();
+			jQuery("#shazam").val(pass);
+			jQuery("#log").val(user);
+			jQuery('#hiddenform').submit();
 
+			/*
 			var data = {
 				"ifaid":338,
 				"usertype":"reg",
@@ -633,7 +637,8 @@ Use of hyperlinks to other Internet sites or resources are at the Visitor&#8217;
 						}
 						
 					}
-				})			
+				})
+			*/
 		}
 
 		jQuery(window).scroll(function(event){		
