@@ -21,7 +21,7 @@ echo "--------------------------------------"
 
 echo "--=== Transfer files to remote Server ===--"
 echo "rsync -avzhe ssh  --rsync-path="""rsync""" ./www/* jenkins@$2:$3"""
-rsync -avzhe ssh  --rsync-path="rsync" . jenkins@$2:$3
+rsync -avzhe ssh  --rsync-path="rsync" ./www/* jenkins@$2:$3
 echo "---------------------------------------"
 
 #echo "--=== Set permisions on transfered files ===--"
@@ -34,5 +34,5 @@ ssh -p 22 $2 "ls -al $3"
 echo "---------------------------------------------------------"
 
 echo "--=== Version Deployed is [$1] The folowing output from version.info ===--"
-ssh -p 22 $2 "cat $3/version.info"
+ssh -p 22 $2 "cat $3/version.html"
 echo "------------The-End-------------------------------------------------------"
